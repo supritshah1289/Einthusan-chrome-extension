@@ -1,14 +1,14 @@
 {
     "manifest_version":2,
     "name": "Enthu",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "This chrome extension let's you watch einthusan movies ads free",
     "background": {
       "scripts": ["background.js"]
     },
     "content_scripts":[
       {
-        "matches":["https://einthusan.tv/movie/watch/*"],
+        "matches":["https://einthusan.com/movie/watch/*"],
         "js":["jquery-3.2.1.min.js", "script.js"]
       }
     ],

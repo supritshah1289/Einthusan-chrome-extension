@@ -3,7 +3,8 @@ chrome.runtime.onMessage.addListener(
         // receives message from background.js
         if( request.message === 'clicked_browser_action') {
             var query = request.url.url;
-            var url = "MY_API"+query; // My API is hidden as I have not implemented security to my end point
+            console.log(query);
+            var url = "https://lit-anchorage-62847.herokuapp.com/api/info?url="+query; // My API is hidden as I have not implemented security to my end point
             fetch(url)
                 .then(function(response) {
                     if (!response.ok) {

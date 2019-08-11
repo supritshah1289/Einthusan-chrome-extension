@@ -5,6 +5,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
       var activeTab = tabs[0];
       // sends message to scripts.js file
       // activeTab contains all the details about the current active tab. Like url and other metadata
+      console.log(tabs, "Tabs");
       chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action","url":activeTab});
     });
   });
