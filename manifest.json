@@ -8,7 +8,7 @@
     },
     "content_scripts":[
       {
-        "matches":["https://einthusan.com/movie/watch/*"],
+        "matches":["https://einthusan.ca/movie/watch/*"],
         "js":["jquery-3.2.1.min.js", "script.js"]
       }
     ],
